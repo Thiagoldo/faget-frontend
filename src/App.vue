@@ -6,9 +6,7 @@ import { RouterView } from 'vue-router';
 
 <template>
   <div>
-    <h1>App.vue</h1>
+    <h1>App.vue | Route: {{ $route.fullPath }}</h1>
     <RouterView />
   </div>
 </template>
-
-<style scoped></style>
