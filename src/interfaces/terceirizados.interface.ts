@@ -12,6 +12,9 @@ export interface ITerceirizado {
   endereco?: string;
 }
 
+export interface ICreateUpdateTerceirizado extends Partial<ITerceirizado> {
+}
+
 export interface ITerceirizadosResponse {
   content: ITerceirizado[];
   count: number;

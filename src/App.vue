@@ -6,6 +6,7 @@ import { RouterView } from 'vue-router';
 
 <template>
   <div>
+    <v-btn @click="$router.go(-1)" icon="mdi-chevron-left"></v-btn>
     <h1>App.vue | Route: {{ $route.fullPath }}</h1>
     <RouterView />
   </div>
