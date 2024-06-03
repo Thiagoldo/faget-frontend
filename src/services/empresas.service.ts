@@ -1,8 +1,8 @@
 import axios, { AxiosInstance } from "axios";
 import { ICreateUpdateEmpresa, IEmpresas, IEmpresasResponse } from "../interfaces/empresas.interface.ts";
 
-const baseUrl: string = "http://192.168.137.83:3000";
-// const baseUrl: string = "https://faget-backend.onrender.com";
+// const baseUrl: string = "http://192.168.137.83:3000";
+const baseUrl: string = "https://faget-backend.onrender.com";
 const connection: AxiosInstance = axios.create({ baseURL: baseUrl });
 
 export const getEmpresas = async (itemsPerPage: number, page: number, nome?: string): Promise<IEmpresasResponse> => {
